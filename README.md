@@ -1,4 +1,4 @@
 # gradient-animations
 
-```cd react-gradient-animation
+   cd react-gradient-animation
    npm start
