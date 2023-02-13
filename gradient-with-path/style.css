@@ -11,10 +11,12 @@ body {
 h1 {
     font-size: 5rem;
     max-width: 13ch;
-    color: blue;
+    color: #0278D5;
 }
 
 .canvas-container {
+    /* position:absolute;
+    inset: 0; */
     height: 50vh;
     clip-path: url(#my-clip-path);
 }
