@@ -14,10 +14,13 @@ h1 {
     color: #0278D5;
 }
 
+
 .canvas-container {
     /* position:absolute;
     inset: 0; */
-    height: 50vh;
+    margin: auto;
+    height: 285px;
+    width: 892px;
     clip-path: url(#my-clip-path);
 }
 
