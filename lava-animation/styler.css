@@ -17,8 +17,24 @@
     clip-path: url(#my-clip-path);
   }
 
-  .svg {
-    position: absolute;
-    width: 0;
-    height: 0;
-  }
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+body {
+  font-family: system-ui;
+}
+
+h1 {
+  font-size: 5rem;
+  max-width: 13ch;
+  color: #0278D5;
+}
+
+.container {
+  --max-width: 50rem;
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
