@@ -28,13 +28,5 @@ class Gradient extends React.Component {
     }
   }
   
-  /*
-   * Render the above component into the div#app
-   */
+
 export default Gradient;
-
-
-/*
-
-
-*/
