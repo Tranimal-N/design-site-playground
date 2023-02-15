@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .svg {
   position: absolute;
   width: 0;
@@ -8,9 +14,9 @@
   background: linear-gradient(120deg, #ff333d, #a960ee, #b8ebff, #90e0ff, #a960ee, #ffcb57, #ee755c, #afe9ff, #b778e0, #c788cb);
   background-size: 200% 100%;
   
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
+  -webkit-animation: AnimationName 45s ease infinite;
+  -moz-animation: AnimationName 45s ease infinite;
+  animation: AnimationName 45s ease infinite;
 
   margin: auto;
   height: 285px;
@@ -21,7 +27,12 @@
 }
 
 h1 {
-  color: #0278D5;    
+  font-size: 5rem;
+  max-width: 13ch;
+  color: #0278D5;
+}
+
+body {
   font-family: system-ui;
 }
 
@@ -42,3 +53,8 @@ h1 {
 }
 
 
+.container {
+  --max-width: 50rem;
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
