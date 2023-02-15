@@ -1,32 +1,30 @@
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
 
-.canvas-container {
+.canvas-container {  
   background: linear-gradient(120deg, #ff333d, #a960ee, #b8ebff, #90e0ff, #a960ee, #ffcb57, #ee755c, #afe9ff, #b778e0, #c788cb);
   background-size: 200% 100%;
-
+  
   -webkit-animation: AnimationName 20s ease infinite;
   -moz-animation: AnimationName 20s ease infinite;
   animation: AnimationName 20s ease infinite;
-  /* box-shadow: 20px 20px 50px 10px #fff inset; */
 
   margin: auto;
   height: 285px;
   width: 892px;
   clip-path: url(#my-clip-path);
+  box-shadow: 10px 20px 25px 20px #c788cb inset;
+
 }
-
-.svg {
-  position: absolute;
-  width: 0;
-  height: 0;
-  /* box-shadow: 20px 20px 50px 10px #000 inset; */
-}
-
-
 
 h1 {
   color: #0278D5;    
   font-family: system-ui;
 }
+
 @-webkit-keyframes AnimationName {
   0%{background-position:91% 0%}
   50%{background-position:10% 100%}

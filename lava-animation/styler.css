@@ -1,0 +1,24 @@
+#gradient-canvas {
+    width:100%;
+    height:100%;
+    --gradient-color-1: #90E0FF; 
+    --gradient-color-2: #AFE9FF; 
+    --gradient-color-3: #B8EBFF;  
+    --gradient-color-4: #A960EE;
+    --gradient-color-5: #FF333D;
+    --gradient-color-6: #FFCB57;
+    --gradient-color-7: #EE755C;
+    --gradient-color-8: #B778E0;
+    --gradient-color-9: #C788CB;
+
+    margin: auto;
+    height: 285px;
+    width: 892px;
+    clip-path: url(#my-clip-path);
+  }
+
+  .svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
