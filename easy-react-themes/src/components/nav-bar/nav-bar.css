@@ -1,0 +1,9 @@
+.nav-bar {
+    color: var(--background);
+    background-color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 30px;
+    /* height: 100px; */
+}
