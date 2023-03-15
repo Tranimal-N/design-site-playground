@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-:root {
+[data-theme='light'] {
   --background: white;
   --text-primary: black;
   --text-secondary: royalblue;
