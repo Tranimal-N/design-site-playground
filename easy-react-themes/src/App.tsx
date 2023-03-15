@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './components/nav-bar/NavBar';
+import Home from './components/home/Home';
 import Resources from './components/resources/Resources';
 import DesignSprint from './components/design-sprint/DesignSprint'
 import './App.css';
@@ -12,7 +13,7 @@ function App() {
         <BrowserRouter>
           <NavBar/>
           <Routes>
-            {/* <Route path="/" element={<Home/>}/> */}
+            <Route path="/" element={<Home/>}/>
             <Route path="/resources" element={<Resources/>}/>
             <Route path="/design-sprint" element={<DesignSprint/>}/>
           </Routes>

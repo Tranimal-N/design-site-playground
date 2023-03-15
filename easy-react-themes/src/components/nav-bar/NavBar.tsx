@@ -1,32 +1,35 @@
 import './nav-bar.css'
 import { Link } from "react-router-dom"
-import useLocalStorage from 'use-local-storage'
+import { useState } from "react"
 
 const NavBar = () => {
 
-    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-  
-    const switchTheme = () => {
-      const newTheme = theme === 'light' ? 'dark' : 'light';
-      setTheme(newTheme);
+    const [theme, setTheme] = useState('light')
+
+    const switchToDark = () => {
+        setTheme(theme => 'dark');
+    }
+
+    const switchToLight = () => {
+        setTheme(theme => 'light');
     }
 
     return (
         <div className="nav-theme" data-theme={theme}>
-            <button onClick={switchTheme}>
-                Switch to {theme === 'light' ? 'dark' : 'light'} Theme
-            </button>
+
             <ul className="nav-bar">
-                <li>Home</li>                
-                <Link to="/resources">
+                <Link to="/" onClick={switchToLight}>
+                    <li>Home</li>                
+                </Link>
+                <Link to="/resources" onClick={switchToLight}>
                     <li>Resources</li>
                 </Link>
-                <Link to ="/design-sprint">
+                <Link to ="/design-sprint" onClick={switchToDark}>
                     <li>Design Sprint</li>
                 </Link>
                 <li>Blogs</li>
             </ul>
+
         </div>
     )
 }

@@ -1,11 +1,11 @@
 .nav-theme {
-  color: var(--text-primary);
-  background-color: var(--background);
+  /* color: var(--text-primary); */
+  /* background-color: var(--background); */
   font-size: large;
   font-weight: bold;
   padding: 20px;
   height: calc(50vh - 140px);
-  transition: all .5s;
+  /* transition: all .5s; */
 }
 
 button {
