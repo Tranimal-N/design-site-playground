@@ -7,11 +7,11 @@ const NavBar = () => {
     const [theme, setTheme] = useState('light')
 
     const switchToDark = () => {
-        setTheme(theme => 'dark');
+        setTheme('dark');
     }
 
     const switchToLight = () => {
-        setTheme(theme => 'light');
+        setTheme('light');
     }
 
     return (
